@@ -60,6 +60,7 @@ public class DepartmentDetailsController {
 	@RequestMapping(value="/get-department-details",method=RequestMethod.POST)
 	public DepartmentResponse saveDepartmentDetailsByDepartmentName(@RequestBody DepartmentPayload departmentPayload,HttpServletRequest request) {
 		DepartmentResponse resp = new DepartmentResponse();
+		logger.info("Start: saveDepartmentDetailsByDepartmentName");
 		DepartmentDetails departmentDetails = departmentDetailsService.getDepartmentDetailsByDepartmentName(departmentPayload.getDepartmentName());
 		if( departmentDetails != null && departmentDetails.getDepartmentId() != null ){
 			logger.info("DeartmentId : "+departmentDetails.getDepartmentId());
