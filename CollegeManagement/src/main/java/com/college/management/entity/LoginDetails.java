@@ -45,7 +45,7 @@ public class LoginDetails implements Serializable {
 	
 
 	@Column(name = "middle_name")
-	private String midddleName;
+	private String middleName;
 	
 
 	@Column(name = "email_address")
@@ -118,13 +118,13 @@ public class LoginDetails implements Serializable {
 	}
 
 
-	public String getMidddleName() {
-		return midddleName;
+	public String getMiddleName() {
+		return middleName;
 	}
 
 
-	public void setMidddleName(String midddleName) {
-		this.midddleName = midddleName;
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
 	}
 
 
@@ -176,9 +176,5 @@ public class LoginDetails implements Serializable {
 	public void setUpdatedDate(Date updatedDate) {
 		this.updatedDate = updatedDate;
 	}
-	
-	
-	
-	
 
 }

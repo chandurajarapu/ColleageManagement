@@ -14,8 +14,11 @@ import com.college.management.entity.LoginDetails;
  */
 public interface LoginDetailsDAO {
 	LoginDetails getLoginDetailsByLoginId(Integer loginId);
-	List<LoginDetails> getLoginDetailsByUserNameAndUserPassword(String userName, String userPassword);
+	
+	LoginDetails getLoginDetailsByUserNameAndUserPassword(String userName, String userPassword);
+	
 	LoginDetails saveLogindetails(LoginDetails loginDetails);
+	
 	LoginDetails saveOrUpdateLoginDetails(LoginDetails loginDetails);
 
 }

@@ -13,7 +13,7 @@ import com.college.management.entity.StudentDetails;
  * EMPID : 200
  */
 public interface StudentDetailsService {
-StudentDetails getStudentDetailsByStudentId(Integer studentId);
+	StudentDetails getStudentDetailsByStudentId(Integer studentId);
 	
 	List<StudentDetails> getStudentDetailsByStudentName(String studentName);
 	
